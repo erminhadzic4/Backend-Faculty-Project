@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize");
-const sequelize = new Sequelize("spirala4", "root", "", {
+const sequelize = new Sequelize("test", "root", "", {
    host: "127.0.0.1",
    dialect: "mysql",
    underscored: true
