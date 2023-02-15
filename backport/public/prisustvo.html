@@ -1,0 +1,74 @@
+<html>
+   <head>
+        <link rel="stylesheet" href="styles.css">
+       <title>Dohvatanje prisustva</title>
+   </head>
+   <body>
+    <!-- CSS Code: Place this code in the document's head (between the <head> -- </head> tags) -->
+
+        <table class="tabela">
+            <tr>
+                <th>Ime</th>
+                <td class="celija">data</td>
+            </tr>
+            <tr>
+                <th>Prezime</th>
+                <td class="celija">data</td>
+            </tr>
+            <tr>
+                <th>Index</th>
+                <td class="celija">data</td>
+            </tr>
+            <tr>
+                <th>prisustvoZaSedmicu</th>
+                <td class="celija">data</td>
+            </tr>
+            <tr>
+                <th>prisutan</th>
+                <td class="celija">data</td>
+            </tr>
+            <tr>
+                <th>odsutan</th>
+                <td class="celija">data</td>
+            </tr>
+            <tr>
+                <th>nijeUneseno</th>
+                <td class="celija">data</td>
+            </tr>
+        </table>
+    
+       <div class="login-box">
+        <h2>Dohvatanje prisustva</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="kod" id="kod"  required="">
+            <label>Kod predmeta</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="index" id="index" required="">
+            <label>Index studenta</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="sedmica" id="sedmica" required="">
+            <label>Sedmica</label>
+          </div>
+          <a href="#" id="submit_dugme" onclick="pozovi_dajPrisustvo();return false;">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Dohvati
+          </a>
+          <a href="#" class="update_alerta" onclick="update_alerta();return false;">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Iskljuci alerte
+          </a>
+        </form>
+      </div>
+      <script src="alert.js"></script>
+      <script src="AjaxPozivi.js"></script>
+   </body>
+</html>

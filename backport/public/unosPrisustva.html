@@ -1,0 +1,53 @@
+<html>
+   <head>
+        <link rel="stylesheet" href="styles.css">
+       <title>Unos prisustva</title>
+   </head>
+   <body>
+       <div class="login-box">
+        <h2>Dodavanje novog prisustva</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="tipCasa" id="tipCasa"  required="">
+            <label>Tip casa</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="redniBrojCasa" id="redniBrojCasa" required="">
+            <label>Redni broj casa</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="sedmica" id="sedmica" required="">
+            <label>Sedmica</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="kodPredmeta" id="kodPredmeta" required="">
+            <label>Kod predmeta</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="indexStudenta" id="indexStudenta" required="">
+            <label>Index studenta</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="statusPrisustva" id="statusPrisustva" required="">
+            <label>Status prisustva</label>
+          </div>
+          <a href="#" id="submit_dugme" onclick="pozovi_posaljiPrisustvo();return false;">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Dodaj
+          </a>
+          <a href="#" class="update_alerta" onclick="update_alerta();return false;">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Iskljuci alerte
+          </a>
+        </form>
+      </div>
+      <script src="alert.js"></script>
+      <script src="AjaxPozivi.js"></script>
+   </body>
+</html>

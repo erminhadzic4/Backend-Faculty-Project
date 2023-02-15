@@ -1,0 +1,41 @@
+<html>
+   <head>
+        <link rel="stylesheet" href="styles.css">
+       <title>Unos studenta</title>
+   </head>
+   <body>
+       <div class="login-box">
+        <h2>Dodavanje novog studenta</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="ime" id="ime"  required="">
+            <label>Ime studenta</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="prezime" id="prezime" required="">
+            <label>Prezime studenta</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="index" id="index" required="">
+            <label>Index studenta</label>
+          </div>
+          <a href="#" id="submit_dugme" onclick="pozovi_posaljiStudent();return false;">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Dodaj
+          </a>
+          <a href="#" class="update_alerta" onclick="update_alerta();return false;">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Iskljuci alerte
+          </a>
+        </form>
+      </div>
+      <script src="alert.js"></script>
+      <script src="AjaxPozivi.js"></script>
+   </body>
+</html>
